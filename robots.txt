@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carlcis211103.github.io/Deluxe-Construction/sitemap.xml
