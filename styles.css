@@ -89,3 +89,6 @@
 /* ===== Página aparte de crédito ===== */
 .back-link{display:inline-block;margin-bottom:1.5rem;color:var(--gold);font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem}
 .back-link:hover{color:var(--gold-light)}
+
+/* Anti-spam (honeypot): invisible para personas */
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
