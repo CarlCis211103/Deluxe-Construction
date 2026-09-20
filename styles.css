@@ -85,3 +85,7 @@
 
 /* Encuadre de la foto del carport (la foto tiene mucho cielo) */
 .visual-card.carport{background-size:cover,auto 175%;background-position:center,34% 100%;background-repeat:no-repeat}
+
+/* ===== Página aparte de crédito ===== */
+.back-link{display:inline-block;margin-bottom:1.5rem;color:var(--gold);font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem}
+.back-link:hover{color:var(--gold-light)}
