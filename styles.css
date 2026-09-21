@@ -92,3 +92,17 @@
 
 /* Anti-spam (honeypot): invisible para personas */
 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+
+/* ===== Carga de fotos (ID y Seguro Social) ===== */
+.field input[type=file]{padding:.6rem;cursor:pointer;color:var(--muted)}
+.field input[type=file]::file-selector-button{margin-right:.8rem;padding:.55rem .9rem;border:0;background:linear-gradient(135deg,var(--gold-light),var(--gold));color:#090909;font-family:Oswald,sans-serif;font-weight:600;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.field small{font-size:.75rem;color:#8d8b87}
+.file-preview{display:flex;align-items:center;gap:.7rem;font-size:.8rem;color:var(--muted);word-break:break-all}
+.file-preview img{width:56px;height:56px;object-fit:cover;border:1px solid var(--line);flex:none}
+
+/* ===== Móvil: WhatsApp arriba y Llamar abajo (apilados, sin barra) ===== */
+@media(max-width:580px){
+  .floating-actions{flex-direction:column;left:auto;right:.75rem;bottom:.75rem;gap:.5rem;align-items:stretch}
+  .floating-actions .floating-call,.floating-actions .floating-wa{flex:none;justify-content:flex-start;padding:.6rem .9rem}
+  .footer{padding-bottom:8rem}
+}
