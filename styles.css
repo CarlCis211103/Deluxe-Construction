@@ -33,10 +33,11 @@
 .field{display:flex;flex-direction:column;gap:.4rem;min-width:0}
 .field.full{grid-column:1/-1}
 .field>span,.radio-group legend{font-family:Oswald,sans-serif;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:0}
-.field input:not([type=radio]),.field select{width:100%;padding:.85rem 1rem;background:#0c0c0c;border:1px solid rgba(214,168,40,.3);color:#fff;font-family:"DM Sans",sans-serif;font-size:.92rem;border-radius:2px}
+.field input:not([type=radio]),.field select,.field textarea{width:100%;padding:.85rem 1rem;background:#0c0c0c;border:1px solid rgba(214,168,40,.3);color:#fff;font-family:"DM Sans",sans-serif;font-size:.92rem;border-radius:2px}
+.field textarea{resize:vertical;min-height:130px;font-family:"DM Sans",sans-serif}
 .field input::placeholder{color:#6f6d69}
 .field select option{background:#0c0c0c}
-.field input:focus,.field select:focus{outline:2px solid var(--gold);outline-offset:1px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);outline-offset:1px}
 .radio-group{border:0;margin:0;padding:0}
 .radio-row{display:flex;gap:2rem;margin-top:.5rem}
 .radio-row label{display:flex;gap:.5rem;align-items:center;cursor:pointer}
@@ -67,11 +68,11 @@
 
 /* ===== Encabezado: cabe con 7 enlaces en pantallas medianas ===== */
 .header-call{white-space:nowrap}
-@media(min-width:901px) and (max-width:1200px){
-  .site-header{gap:1rem}
-  .desktop-nav{gap:.8rem;font-size:.74rem;letter-spacing:.04em}
-  .header-actions{gap:.8rem}
-  .header-call{padding-left:.8rem}
+@media(min-width:901px) and (max-width:1360px){
+  .site-header{gap:.7rem}
+  .desktop-nav{gap:.65rem;font-size:.7rem;letter-spacing:.03em}
+  .header-actions{gap:.7rem}
+  .header-call{padding-left:.7rem}
 }
 
 /* ===== Corrección: la cuadrícula "Why Choose" no colapsaba en tablet/móvil ===== */
