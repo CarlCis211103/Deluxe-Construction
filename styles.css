@@ -107,3 +107,12 @@
   .floating-actions .floating-call,.floating-actions .floating-wa{flex:none;justify-content:flex-start;padding:.6rem .9rem}
   .footer{padding-bottom:8rem}
 }
+
+/* ===== Formulario de crédito: secciones (solicitante, adicional, referencias) ===== */
+.credit-grid .form-section{grid-column:1/-1;margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid var(--line)}
+.credit-grid .form-section.first{margin-top:0;padding-top:0;border-top:0}
+.credit-grid .form-section h3{font-size:1.35rem;color:var(--gold)}
+.credit-grid .form-section h4{font-size:1.05rem;color:#fff;font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.06em;margin:0}
+.credit-grid .form-section p{margin:.4rem 0 0;font-size:.85rem;color:var(--muted)}
+.credit-grid .form-section:has(h4){margin-top:.8rem;padding-top:.9rem;border-top:1px dashed rgba(214,168,40,.22)}
+.field input[type=date]{color-scheme:dark}
