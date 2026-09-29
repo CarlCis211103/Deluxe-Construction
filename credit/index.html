@@ -49,23 +49,23 @@
         <label class="field full" id="bankruptcyDetail" hidden><span data-i18n="cfBankruptcyYear">Approximate year (optional)</span><input type="text" name="bankruptcy_year" inputmode="numeric" maxlength="4" /></label>
         <label class="field full"><span data-i18n="cfIdPhoto">Photo of your ID</span><input type="file" name="id_photo" accept="image/*" required /><small data-i18n="cfIdHint">Front of your driver's license or state ID. Clear, well-lit photo.</small><div class="file-preview" hidden></div></label>
         <label class="field full"><span data-i18n="cfSsPhoto">Photo of your Social Security card</span><input type="file" name="ss_photo" accept="image/*" required /><small data-i18n="cfSsHint">Front of the card. Clear, well-lit photo.</small><div class="file-preview" hidden></div></label>
-        <div class="form-section" id="coApplicant"><h3 data-i18n="cfCoTitle">Additional applicant (optional)</h3><p data-i18n="cfCoHint">Applying with someone else? Complete this section. Leave it blank if you are applying alone.</p></div>
-        <label class="field full"><span data-i18n="cfName">Full Name</span><input type="text" name="co_name" autocomplete="off" data-req /></label>
-        <label class="field full"><span data-i18n="cfDob">Date of Birth</span><input type="date" name="co_dob" class="js-dob" autocomplete="off" data-req /></label>
-        <label class="field full"><span data-i18n="cfAddress">Home Address</span><input type="text" name="co_address" autocomplete="off" data-req /></label>
-        <label class="field"><span data-i18n="cfPhone">Cell Phone</span><input type="tel" name="co_phone" autocomplete="off" data-req /></label>
-        <label class="field"><span data-i18n="cfEmail">Email</span><input type="email" name="co_email" autocomplete="off" data-req /></label>
-        <label class="field"><span data-i18n="cfSsn">Social Security Number</span><input type="password" name="co_ssn" inputmode="numeric" autocomplete="off" maxlength="11" pattern="[0-9]{3}-?[0-9]{2}-?[0-9]{4}" placeholder="•••-••-••••" data-req /></label>
-        <label class="field"><span data-i18n="cfIncome">Annual Income (USD)</span><input type="text" name="co_income" inputmode="numeric" data-req /></label>
-        <label class="field"><span data-i18n="cfHomeowner">Homeowner?</span><select name="co_homeowner" data-req><option value="" data-i18n="cfSelect" disabled selected>Select</option><option value="Yes" data-i18n="cfYes">Yes</option><option value="No" data-i18n="cfNo">No</option></select></label>
-        <label class="field"><span data-i18n="cfCitizen">Citizen or Resident?</span><select name="co_citizenship" data-req><option value="" data-i18n="cfSelect" disabled selected>Select</option><option value="US Citizen" data-i18n="cfCitizenUS">U.S. Citizen</option><option value="Permanent Resident" data-i18n="cfCitizenRes">Permanent Resident</option></select></label>
-        <label class="field"><span data-i18n="cfEmployer">Place of Employment</span><input type="text" name="co_employer" autocomplete="off" data-req /></label>
-        <label class="field"><span data-i18n="cfTenure">Time at Current Job</span><input type="text" name="co_tenure" data-i18n-placeholder="cfTenurePh" placeholder="e.g., 3 years" data-req /></label>
-        <label class="field full"><span data-i18n="cfPosition">Job Position</span><input type="text" name="co_position" autocomplete="off" data-req /></label>
-        <fieldset class="field full radio-group"><legend data-i18n="cfBankruptcy">Have you ever filed for bankruptcy?</legend><div class="radio-row"><label><input type="radio" name="co_bankruptcy" value="Yes" data-req /> <span data-i18n="cfYes">Yes</span></label><label><input type="radio" name="co_bankruptcy" value="No" /> <span data-i18n="cfNo">No</span></label></div></fieldset>
+        <div class="form-section" id="coApplicant"><h3 data-i18n="cfCoTitle">Additional applicant</h3><p data-i18n="cfCoHint">Please complete this section for the additional applicant.</p></div>
+        <label class="field full"><span data-i18n="cfName">Full Name</span><input type="text" name="co_name" autocomplete="off" required /></label>
+        <label class="field full"><span data-i18n="cfDob">Date of Birth</span><input type="date" name="co_dob" class="js-dob" autocomplete="off" required /></label>
+        <label class="field full"><span data-i18n="cfAddress">Home Address</span><input type="text" name="co_address" autocomplete="off" required /></label>
+        <label class="field"><span data-i18n="cfPhone">Cell Phone</span><input type="tel" name="co_phone" autocomplete="off" required /></label>
+        <label class="field"><span data-i18n="cfEmail">Email</span><input type="email" name="co_email" autocomplete="off" required /></label>
+        <label class="field"><span data-i18n="cfSsn">Social Security Number</span><input type="password" name="co_ssn" inputmode="numeric" autocomplete="off" maxlength="11" pattern="[0-9]{3}-?[0-9]{2}-?[0-9]{4}" placeholder="•••-••-••••" required /></label>
+        <label class="field"><span data-i18n="cfIncome">Annual Income (USD)</span><input type="text" name="co_income" inputmode="numeric" required /></label>
+        <label class="field"><span data-i18n="cfHomeowner">Homeowner?</span><select name="co_homeowner" required><option value="" data-i18n="cfSelect" disabled selected>Select</option><option value="Yes" data-i18n="cfYes">Yes</option><option value="No" data-i18n="cfNo">No</option></select></label>
+        <label class="field"><span data-i18n="cfCitizen">Citizen or Resident?</span><select name="co_citizenship" required><option value="" data-i18n="cfSelect" disabled selected>Select</option><option value="US Citizen" data-i18n="cfCitizenUS">U.S. Citizen</option><option value="Permanent Resident" data-i18n="cfCitizenRes">Permanent Resident</option></select></label>
+        <label class="field"><span data-i18n="cfEmployer">Place of Employment</span><input type="text" name="co_employer" autocomplete="off" required /></label>
+        <label class="field"><span data-i18n="cfTenure">Time at Current Job</span><input type="text" name="co_tenure" data-i18n-placeholder="cfTenurePh" placeholder="e.g., 3 years" required /></label>
+        <label class="field full"><span data-i18n="cfPosition">Job Position</span><input type="text" name="co_position" autocomplete="off" required /></label>
+        <fieldset class="field full radio-group"><legend data-i18n="cfBankruptcy">Have you ever filed for bankruptcy?</legend><div class="radio-row"><label><input type="radio" name="co_bankruptcy" value="Yes" required /> <span data-i18n="cfYes">Yes</span></label><label><input type="radio" name="co_bankruptcy" value="No" /> <span data-i18n="cfNo">No</span></label></div></fieldset>
         <label class="field full" id="coBankruptcyDetail" hidden><span data-i18n="cfBankruptcyYear">Approximate year (optional)</span><input type="text" name="co_bankruptcy_year" inputmode="numeric" maxlength="4" /></label>
-        <label class="field full"><span data-i18n="cfCoIdPhoto">Photo of the additional applicant's ID</span><input type="file" name="co_id_photo" accept="image/*" data-req /><small data-i18n="cfIdHint">Front of your driver's license or state ID. Clear, well-lit photo.</small><div class="file-preview" hidden></div></label>
-        <label class="field full"><span data-i18n="cfCoSsPhoto">Photo of the additional applicant's Social Security card</span><input type="file" name="co_ss_photo" accept="image/*" data-req /><small data-i18n="cfSsHint">Front of the card. Clear, well-lit photo.</small><div class="file-preview" hidden></div></label>
+        <label class="field full"><span data-i18n="cfCoIdPhoto">Photo of the additional applicant's ID</span><input type="file" name="co_id_photo" accept="image/*" required /><small data-i18n="cfIdHint">Front of your driver's license or state ID. Clear, well-lit photo.</small><div class="file-preview" hidden></div></label>
+        <label class="field full"><span data-i18n="cfCoSsPhoto">Photo of the additional applicant's Social Security card</span><input type="file" name="co_ss_photo" accept="image/*" required /><small data-i18n="cfSsHint">Front of the card. Clear, well-lit photo.</small><div class="file-preview" hidden></div></label>
         <div class="form-section"><h3 data-i18n="cfRefTitle">References</h3><p data-i18n="cfRefHint">Please provide 3 references.</p></div>
         <div class="form-section" role="group" aria-labelledby="refTitle1"><h4 id="refTitle1" data-i18n="cfRef1">Reference 1</h4></div>
         <label class="field full"><span data-i18n="cfName">Full Name</span><input type="text" name="ref1_name" autocomplete="off" required /></label>
@@ -94,6 +94,19 @@
         <label class="field"><span data-i18n="cfZip">ZIP Code</span><input type="text" name="ref3_zip" inputmode="numeric" autocomplete="off" maxlength="5" pattern="[0-9]{5}" required /></label>
         <label class="field"><span data-i18n="cfRefPhone">Phone</span><input type="tel" name="ref3_phone" autocomplete="off" required /></label>
         <label class="field full"><span data-i18n="cfEmail">Email</span><input type="email" name="ref3_email" autocomplete="off" required /></label>
+        <div class="form-section"><h3 data-i18n="cfSignatureTitle">Signature</h3></div>
+        <div class="field full signature-field">
+          <span data-i18n="cfSignatureAuth">By signing below, I authorize Deluxe Construction LLC and its financing partners to run a credit check and verify the information provided in this application.</span>
+          <div class="signature-pad">
+            <canvas id="signatureCanvas" width="600" height="180" aria-label="Signature pad"></canvas>
+            <p class="signature-placeholder" id="signaturePlaceholder" data-i18n="cfSignaturePlaceholder">Sign here with your mouse or finger</p>
+          </div>
+          <div class="signature-actions">
+            <button type="button" class="btn btn-outline btn-small" id="signatureClear" data-i18n="cfSignatureClear">Clear signature</button>
+            <span class="signature-error" id="signatureError" data-i18n="cfSignatureRequired" hidden>Please sign above before submitting.</span>
+          </div>
+          <input type="hidden" name="signature_data" id="signatureData" />
+        </div>
         <label class="consent"><input type="checkbox" name="consent" required /> <span data-i18n="cfConsent">I confirm the information above is accurate and authorize Deluxe Construction LLC to contact me about my financing pre-approval request.</span></label>
         <button type="submit" class="btn btn-gold btn-wide" data-i18n="cfSubmit">Submit Pre-Approval Request</button><input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
       </div><p class="form-status" id="creditStatus" role="status" aria-live="polite"></p><p class="estimate-form-note" data-i18n="cfPrivacy">Your information is kept private and used only to review your financing request.</p></form>

@@ -116,3 +116,16 @@
 .credit-grid .form-section p{margin:.4rem 0 0;font-size:.85rem;color:var(--muted)}
 .credit-grid .form-section:has(h4){margin-top:.8rem;padding-top:.9rem;border-top:1px dashed rgba(214,168,40,.22)}
 .field input[type=date]{color-scheme:dark}
+
+/* ===== Firma digital en el formulario de crédito ===== */
+.signature-field{gap:.6rem}
+.signature-field>span{font-family:DM Sans,sans-serif;font-size:.85rem;text-transform:none;letter-spacing:0;color:var(--muted);line-height:1.5}
+.signature-pad{position:relative;border:1px solid var(--line);background:#fff;border-radius:2px;touch-action:none}
+.signature-pad canvas{display:block;width:100%;height:180px;cursor:crosshair}
+.signature-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#9a978f;font-family:Oswald,sans-serif;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;pointer-events:none}
+.signature-pad.has-signature .signature-placeholder{display:none}
+.signature-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.btn-outline{background:transparent;border:1px solid var(--line);color:var(--text);font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.06em;padding:.55rem 1.1rem;cursor:pointer;transition:border-color .2s,color .2s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.btn-small{font-size:.75rem;padding:.5rem .9rem}
+.signature-error{color:#e0554f;font-size:.8rem;font-weight:600}
